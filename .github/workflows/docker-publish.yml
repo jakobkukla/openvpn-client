@@ -74,3 +74,6 @@ jobs:
           labels: ${{ steps.meta.outputs.labels }}
           cache-from: type=gha
           cache-to: type=gha,mode=max
+
+      - name: Prevent GitHub Actions from going stale
+        uses: gautamkrishnar/keepalive-workflow@v1
