@@ -77,3 +77,5 @@ jobs:
 
       - name: Prevent GitHub Actions from going stale
         uses: gautamkrishnar/keepalive-workflow@v1
+        with:
+          gh_token: ${{ secrets.GITHUB_TOKEN }}
